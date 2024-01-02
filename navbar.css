@@ -1,0 +1,420 @@
+label,
+nav > menu {
+  margin: 0;
+}
+.categories {
+  position: absolute;
+  left: 295px;
+  top: 13px;
+}
+.categories nav::after {
+  display: none !important;
+}
+nav menuitem {
+  position: relative;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+nav menuitem > menu {
+  pointer-events: none;
+}
+nav > menu {
+  display: flex;
+  padding: 0;
+}
+nav > menu > menuitem {
+  pointer-events: all;
+  opacity: 1;
+}
+menu menuitem a {
+  white-space: nowrap;
+  display: block;
+}
+menuitem:hover > menu {
+  pointer-events: initial;
+  pointer-events: auto;
+  opacity: 1;
+}
+menu:hover > menuitem,
+menuitem:hover > menu > menuitem {
+  opacity: 1;
+}
+nav > menu > menuitem menuitem menu {
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+}
+.navr {
+  position: static;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  margin: 0 0 -24px -90px;
+}
+.navr a,
+.pam {
+  background: #ff5421;
+}
+.navr a {
+  color: #fff !important;
+  min-width: 190px;
+  transition:
+    background 0.5s,
+    color 0.5s,
+    transform 0.5s;
+  margin: 0 6px 6px 0;
+  padding: 8px 56px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+nav > menu > menuitem > a + menu:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid #ff5421;
+  left: 12px;
+  top: -40px;
+}
+nav menuitem > menu > menuitem > a + menu:after {
+  content: "";
+  position: absolute;
+  border: 10px solid transparent;
+  border-left: 10px solid #ff5421;
+  top: 12px;
+  left: -280px;
+}
+nav > menu > menuitem > menu > menuitem {
+  transition:
+    transform 0.6s,
+    opacity 0.6s;
+  transform: translateY(150%);
+  opacity: 0;
+}
+nav > menu > menuitem.hover > menu > menuitem,
+nav > menu > menuitem:hover > menu > menuitem {
+  transform: translateY(0);
+  opacity: 1;
+}
+menuitem > menu > menuitem > menu > menuitem {
+  transition:
+    transform 0.6s,
+    opacity 0.6s;
+  transform: translateX(195px) translateY(0);
+  opacity: 0;
+}
+menuitem > menu > menuitem.hover > menu > menuitem,
+menuitem > menu > menuitem:hover > menu > menuitem {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
+}
+nav menuitem > menu {
+  padding: 0;
+  position: absolute;
+  pointer-events: none;
+  margin: -2px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+body:hover > .categories nav menuitem > menu {
+  pointer-events: none;
+  opacity: 0;
+}
+@media (max-width: 320px) {
+ 
+  .nav-top-head {
+    height: 27vw !important;
+  }
+
+  .has {
+    width: 100%; /* Use 100% of the parent container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-wrap: break-word; /* Break word if it exceeds the container width (fallback) */
+    overflow-wrap: break-word; /* Ensure word breaking in browsers that support it */
+  }
+  .categories {
+    position: absolute;
+    left: 197px !important;
+    top: 14px;
+}
+menuitem:hover > menu {
+  top: 52px;
+  left: -107px !important;
+  background: black;
+}
+
+.navr a {
+  min-width: 147px !important;
+  font-size: 10px !important;
+  width: 119px !important;
+  font-weight: 600;
+  padding: 8px 15px !important;
+}
+
+
+/* @media (max-width: 767px)
+.mainc, .navr a {
+  padding: 8px 10px !important; */
+
+
+
+}
+
+@media only screen and (max-width: 345px) and (min-width: 321px) {
+  .nav-top-head span {
+    font-size: 11px !important;
+  }
+}
+@media only screen and (max-width: 1450px) and (min-width: 1400px) {
+  .categories {
+    position: absolute;
+    left: 375px !important;
+    top: 12px !important;
+  }
+}
+@media only screen and (max-width: 1240px) and (min-width: 1020px) {
+  .courses {
+    width: 16rem !important;
+  }
+  .COuRs {
+    height: 70vh;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 1165px) and (min-width: 1000px) {
+  .course-right-section {
+    width: 70% !important;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  menuitem:hover > menu {
+    top: 52px;
+       left: -140px;
+       background:black;
+   }
+  .has {
+    width: 202px; /* Use 100% of the parent container */
+    white-space: normal; /* Allow text to wrap to the next line */
+    word-wrap: break-word; /* Break word if it exceeds the container width (fallback) */
+    overflow-wrap: break-word; /* Ensure word breaking in browsers that support it */
+  }
+  .mainc,
+  .navr a {
+    padding: 8px 20px !important;
+    background: #ff5421;
+    color: #fff;
+    box-shadow: none;
+  }
+  .categories {
+    position: absolute;
+    left: 230px;
+    top: 14px ;
+}
+  .navr a {
+    min-width: 160px;
+    font-size: 12px;
+    width: 170px;
+  }
+  .mainc {
+    min-width: 62px !important;
+    width: 92px !important;
+    font-size: 7px !important;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+  }
+  nav > menu > menuitem > a + menu:after {
+    display: none !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media only screen and (max-width: 1035px) and (min-width: 780px) {
+  .navigation-section ul {
+    column-gap: 15px !important;
+    font-size: 13px;
+  }
+  .categories {
+    left: 290px !important;
+    font-size: 12px;
+    top: 21px;
+  }
+  .nav-top-head {
+    font-size: 11.8px !important;
+  }
+  .book-form .form-cont .buttons a {
+    padding: 5px !important;
+    font-size: 12px;
+    width: 10rem;
+  }
+  @media only screen and (max-width: 900px) and (min-width: 781px) {
+    .course-right-section {
+      height: 50vh !important;
+      padding: 0 35px;
+    }
+    #CAD,
+    .dropdown-course {
+      justify-content: center !important;
+    }
+    .navr a {
+      text-align: center !important;
+    }
+    .navigation-section ul {
+      column-gap: 12px !important;
+      font-size: 14px;
+    }
+    .pam {
+      width: 102px;
+    }
+    .pam li {
+      width: 10px;
+    }
+    .categories {
+      left: 220px !important;
+      font-size: 10px;
+    }
+    .logoimages {
+      width: 129px !important;
+      height: 6rem !important;
+    }
+    .loG {
+      height: 68px;
+      width: 122px;
+      margin: -17px -5px 0 0;
+    }
+  }
+  .navr a {
+    min-width: 100px !important;
+    padding: 8px 10px 8px 11px !important;
+  }
+ 
+  .nav-top-head {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .navigation-container {
+    height: 500px !important;
+  }
+  .navigation-section ul {
+    flex-direction: column;
+    max-height: 190px !important;
+  }
+  .Train {
+    height: 165px !important;
+    overflow-y: scroll !important;
+  }
+  .mobile-whats .whats-box img {
+    display: block !important;
+ 
+  }
+  .nav-top-head span a {
+    font-size: 10px !important;
+  }
+}
+@media only screen and (max-width: 390px) and (min-width: 100px) {
+  .navigation-container {
+    height: 500px !important;
+  }
+  .Train {
+    height: 165px !important;
+    overflow-y: scroll !important;
+  }
+  .course-right-section {
+    height: 252px !important;
+    overflow-y: scroll !important;
+  }
+  .mobile-whats .whats-box img {
+    display: block !important;
+
+  }
+}
+@media only screen and (max-width: 260px) and (min-width: 100px) {
+  .nav-top-head {
+    height: 33vw !important;
+  }
+  /* menuitem:hover > menu {
+    top: 53px;
+    left: -9px;
+    background: black;
+} */
+  .banner-image-container img {
+    margin: -56px 0 0;
+    height: 161px !important;
+  }
+  .course-right-section {
+    height: 252px !important;
+    overflow-y: scroll !important;
+  }
+  .mobile-whats .whats-box img {
+    display: block !important;
+  
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .Train,
+  .course-right-section {
+    overflow-y: scroll !important;
+  }
+  .navigation-container {
+    height: 500px !important;
+  }
+  .Train {
+    height: 165px !important;
+  }
+}
+.pam {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 3px;
+  color: #fff !important;
+  column-gap: 5px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+  height: 35px;
+}
+.pam img {
+  height: 30px;
+}
+@media only screen and (min-width: 1035px) and (max-width: 1230px) {
+  .SER ul {
+    column-gap: 15px;
+  }
+  .navr a {
+    width: 18px;
+    min-width: 100px;
+    height: 35px;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+  }
+  .categories {
+    top: 18px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1230px) {
+  .TRaiN {
+    display: grid !important;
+    grid-template-columns: auto auto auto auto auto auto !important;
+  }
+  .coursep {
+    font-size: 12px;
+    margin: 5px 10px 20px;
+  }
+}
+.ANN label {
+  position: relative !important;
+  top: -75px !important;
+}

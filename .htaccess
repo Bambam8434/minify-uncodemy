@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^test$ test.html [NC,L]
+RewriteRule ^debug$ debug.php [NC,L]
